@@ -1,4 +1,3 @@
-# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -19,31 +18,19 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# Virtual environments
 venv/
 ENV/
 env/
-.venv
-
-# IDEs
+.venv/
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
 Thumbs.db
-
-# Logs
-*.log
-
-# Environment
-.env
-
-# Local test artifacts
 *.db
-*.sqlite
-*.sqlite3
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
