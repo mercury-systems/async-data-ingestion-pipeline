@@ -1,3 +1,9 @@
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: marks tests requiring network or external services",
+]
+asyncio_mode = "auto"

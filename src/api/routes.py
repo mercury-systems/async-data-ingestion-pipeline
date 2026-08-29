@@ -1,7 +1,6 @@
 """API routes."""
 
 from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
-from typing import Optional
 
 from src.models.data import (
     IngestionRequest, IngestionResponse,

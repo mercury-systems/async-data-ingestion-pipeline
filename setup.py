@@ -1,7 +1,10 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+try:
+    with open("README.md", "r", encoding="utf-8") as fh:
+        long_description = fh.read()
+except FileNotFoundError:
+    long_description = "Async data ingestion pipeline with retry, circuit breaker, and job tracking"
 
 setup(
     name="async-data-ingestion-pipeline",

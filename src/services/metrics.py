@@ -1,6 +1,5 @@
 """In-memory metrics tracking."""
 
-import time
 import threading
 from typing import Dict
 

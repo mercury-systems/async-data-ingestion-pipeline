@@ -23,20 +23,24 @@ FastAPI service for ingesting data from external APIs with retry, circuit breake
 | GET | `/api/metrics` | System metrics |
 | GET | `/api/dead-letter` | Failed ingestions |
 
-## Install
+## Installation
 
-    git clone https://github.com/mercury-systems/async-data-ingestion-pipeline.git
-    cd async-data-ingestion-pipeline
+```bash
+git clone https://github.com/mercury-systems/async-data-ingestion-pipeline.git
+cd async-data-ingestion-pipeline
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+pip install -e .
+```
 
-    # Optional: create a virtual environment
-    python3 -m venv venv
-    source venv/bin/activate
+For running tests:
 
-    pip install -r requirements.txt
-    pip install -e .
+```bash
+pip install -r requirements-dev.txt
+```
 
-    # For running tests
-    pip install -r requirements-dev.txt
+> **Note:** Always activate the virtual environment (`source .venv/bin/activate`) before working with this project.
 
 ## Quick Start
 

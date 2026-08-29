@@ -112,4 +112,5 @@ class IngestionService:
 async def _async_sleep(delay: float, transport):
     if transport is not None:
         return
-    await __import__("asyncio").sleep(delay)
+    import asyncio
+    await asyncio.sleep(delay)
